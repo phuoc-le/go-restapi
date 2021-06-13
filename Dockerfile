@@ -17,10 +17,10 @@ RUN go mod download
 # the container
 COPY . .
 
-RUN chmod +x ./scripts/entrypoint.sh
+RUN go build -o main cmd/api/main.go
 
 # This container exposes API_PORT from .env to the outside world
 EXPOSE ${API_PORT}
 
-ENTRYPOINT ["./scripts/entrypoint.sh"]
+ENTRYPOINT ["./main"]
 
