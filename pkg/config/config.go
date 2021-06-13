@@ -3,7 +3,7 @@ package config
 import (
 	"flag"
 	"fmt"
-	"github.com/phuoc-le/go-api-boilerplate/pkg/utils"
+	"github.com/phuoc-le/go-restapi/pkg/utils"
 )
 
 type Config struct {

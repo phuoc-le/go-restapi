@@ -1,9 +1,9 @@
 package application
 
 import (
-	"github.com/phuoc-le/go-api-boilerplate/pkg/cache"
-	"github.com/phuoc-le/go-api-boilerplate/pkg/config"
-	"github.com/phuoc-le/go-api-boilerplate/pkg/db"
+	"github.com/phuoc-le/go-restapi/pkg/cache"
+	"github.com/phuoc-le/go-restapi/pkg/config"
+	"github.com/phuoc-le/go-restapi/pkg/db"
 )
 
 // Application holds commonly used app wide data, for ease of DI

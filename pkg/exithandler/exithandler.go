@@ -5,7 +5,7 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/phuoc-le/go-api-boilerplate/pkg/logger"
+	"github.com/phuoc-le/go-restapi/pkg/logger"
 )
 
 // Init accepts a callback function that will be invoked when program exits

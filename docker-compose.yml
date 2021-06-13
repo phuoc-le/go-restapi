@@ -1,12 +1,12 @@
 version: "3.7"
 
 volumes:
-  boilerplatevolume:
-    name: boilerplate-volume
+  gorestapi-volume:
+    name: gorestapi--volume
 
 networks:
-  boilerplatenetwork:
-    name: boilerplate-network
+  gorestapi-network:
+    name: gorestapi--network
 
 services:
   pg:
@@ -17,14 +17,14 @@ services:
     ports:
       - "${POSTGRES_PORT}:${POSTGRES_PORT}"
     volumes:
-      - boilerplatevolume:/var/lib/postgresql/data
+      - gorestapi-volume:/var/lib/postgresql/data
       - ./db/scripts:/docker-entrypoint-initdb.d/
     networks:
-      - boilerplatenetwork
-  boilerplate_api:
+      - gorestapi-network
+  gorestapi-_api:
     build:
       context: .
-      dockerfile: Dockerfile.dev
+      dockerfile: Dockerfile
       args:
         API_PORT: ${API_PORT}
     env_file:
@@ -36,7 +36,5 @@ services:
     ports:
       - "${API_PORT}:${API_PORT}"
     networks:
-      - boilerplatenetwork
-    env_file:
-      - .env
-    entrypoint: ["/bin/bash", "./scripts/entrypoint.dev.sh"]
+      - gorestapi-network
+    entrypoint: ["/bin/bash", "./scripts/entrypoint.sh"]

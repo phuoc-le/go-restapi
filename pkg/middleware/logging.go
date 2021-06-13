@@ -3,7 +3,7 @@ package middleware
 import (
 	"net/http"
 
-	"github.com/phuoc-le/go-api-boilerplate/pkg/logger"
+	"github.com/phuoc-le/go-restapi/pkg/logger"
 	"github.com/julienschmidt/httprouter"
 )
 

@@ -1,4 +1,4 @@
-module github.com/phuoc-le/go-api-boilerplate
+module github.com/phuoc-le/go-restapi
 
 go 1.16
 

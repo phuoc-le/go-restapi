@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/go-api-boilerplate.iml" filepath="$PROJECT_DIR$/.idea/go-api-boilerplate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../go-restapi/.idea/go-restapi.iml" filepath="$PROJECT_DIR$/../go-restapi/.idea/go-restapi.iml" />
     </modules>
   </component>
 </project>
