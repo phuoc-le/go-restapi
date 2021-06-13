@@ -7,9 +7,9 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/boilerplate/cmd/api/models"
-	"github.com/boilerplate/pkg/application"
-	"github.com/boilerplate/pkg/middleware"
+	"github.com/phuoc-le/go-restapi/cmd/api/models"
+	"github.com/phuoc-le/go-restapi/pkg/application"
+	"github.com/phuoc-le/go-restapi/pkg/middleware"
 	"github.com/julienschmidt/httprouter"
 )
 

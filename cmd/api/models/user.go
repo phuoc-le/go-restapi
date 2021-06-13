@@ -3,7 +3,7 @@ package models
 import (
 	"context"
 
-	"github.com/boilerplate/pkg/application"
+	"github.com/phuoc-le/go-restapi/pkg/application"
 )
 
 type User struct {

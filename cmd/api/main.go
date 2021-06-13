@@ -1,11 +1,11 @@
 package main
 
 import (
-	"github.com/boilerplate/cmd/api/router"
-	"github.com/boilerplate/pkg/application"
-	"github.com/boilerplate/pkg/exithandler"
-	"github.com/boilerplate/pkg/logger"
-	"github.com/boilerplate/pkg/server"
+	"github.com/phuoc-le/go-restapi/cmd/api/router"
+	"github.com/phuoc-le/go-restapi/pkg/application"
+	"github.com/phuoc-le/go-restapi/pkg/exithandler"
+	"github.com/phuoc-le/go-restapi/pkg/logger"
+	"github.com/phuoc-le/go-restapi/pkg/server"
 	"github.com/joho/godotenv"
 )
 
