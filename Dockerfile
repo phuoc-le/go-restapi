@@ -4,23 +4,24 @@ FROM golang:1.16
 # create a working directory
 WORKDIR /app
 
-# we will be expecting to get API_PORT as arguments
-ARG API_PORT
-
 # Fetch dependencies on separate layer as they are less likely to
 # change on every build and will therefore be cached for speeding
 # up the next build
 COPY ./go.mod ./go.sum ./
 RUN go mod download
 
-# copy source from the host to the working directory inside
+# Copy source from the host to the working directory inside
 # the container
 COPY . .
 
+# Build
 RUN go build -o main cmd/api/main.go
 
-# This container exposes API_PORT from .env to the outside world
-EXPOSE ${API_PORT}
+# Assign executive mode for entrypoint
+RUN chmod +x ./scripts/entrypoint.sh
 
-ENTRYPOINT ["./main"]
+# This container exposes port to the outside world
+EXPOSE 8080
+
+ENTRYPOINT ["./scripts/entrypoint.sh"]
 
