@@ -1,5 +1,5 @@
 main
 .env
-vscode/
-.idea
+.vscode/*
+.idea/*
 
